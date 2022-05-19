@@ -1,7 +1,5 @@
 
-[![pipeline status](https://gitlab.linphone.org/BC/public/linphone-android/badges/master/pipeline.svg)](https://gitlab.linphone.org/BC/public/linphone-android/commits/master)
-
-[![Gradle Package](https://github.com/Call-My-Way/Android/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/Call-My-Way/Android/actions/workflows/gradle-publish.yml)
+[![pipeline status](https://gitlab.linphone.org/BC/public/linphone-android/badges/master/pipeline.svg)](https://gitlab.linphone.org/BC/public/linphone-android/commits/master) [![Gradle Package](https://github.com/Call-My-Way/Android/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/Call-My-Way/Android/actions/workflows/gradle-publish.yml)
 
 Linphone is an open source softphone for voice and video over IP calling and instant messaging.
 
