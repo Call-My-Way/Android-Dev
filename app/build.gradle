@@ -9,7 +9,7 @@ plugins {
 def appVersionName = "1.1.5"
 // Uncomment for release
 def appVersionCode = 40600 // 4.06.00
-def appVersionCode = 5 // 4.05.93
+//def appVersionCode = 5 // 4.05.93
 
 static def getPackageName() {
     return "org.callmyway"
@@ -194,6 +194,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    namespace 'org.linphone'
 }
 
 dependencies {
