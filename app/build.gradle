@@ -3,7 +3,6 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'org.jlleitschuh.gradle.ktlint'
-    id 'com.google.gms.google-services'
 }
 
 def appVersionName = "1.1.5"
@@ -90,9 +89,10 @@ android {
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 31
+        multiDexEnabled true
         versionCode appVersionCode
         versionName "${project.version}"
-        applicationId getPackageName()
+        applicationId 'com.callmyway.android'
     }
 
     applicationVariants.all { variant ->
@@ -203,6 +203,7 @@ dependencies {
     implementation 'androidx.media:media:1.4.3'
     implementation 'androidx.fragment:fragment-ktx:1.4.0'
     implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
 
     def nav_version = "2.4.0-rc01"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
@@ -210,7 +211,7 @@ dependencies {
 
     implementation "androidx.slidingpanelayout:slidingpanelayout:1.2.0-rc01"
     implementation "androidx.window:window:1.0.0-rc01"
-
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
@@ -220,6 +221,8 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation "com.google.android.gms:play-services-maps:11.8.0"
+    implementation "com.google.android.gms:play-services-nearby:11.8.0"
 
     implementation 'androidx.emoji:emoji:1.1.0'
     implementation 'androidx.emoji:emoji-bundled:1.1.0'
