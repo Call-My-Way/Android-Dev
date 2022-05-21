@@ -10,7 +10,6 @@ This changelog file was started on October 2019. Previous changes were more or l
 
 
 
-## [5.2.0] Unreleased
 
 ### Added
 - Rtp bundle can be enabled per LinphoneAccount, superseeding the setting at LinphoneCore level.
@@ -21,7 +20,6 @@ This changelog file was started on October 2019. Previous changes were more or l
 - Foreground & background delays for core.iterate() scheduling can be configured in linphonerc & using API
 
 
-## [5.1.0] 2022-02-14
 
 ### Added
 - LinphoneRecorder API added to record voice messages, that can later be sent in a LinphoneChatMessage.
@@ -46,8 +44,6 @@ This changelog file was started on October 2019. Previous changes were more or l
   To preserve maximum interoperability with available SIP services, default values for both options are 1 (true).
   Using a robust password is anyway highly recommended to avoid brute force attacks.
 
-
-## [5.0.0] 2021-07-08
 
 ### Added
 - Native support of Windows 10 UWP platform
@@ -77,9 +73,6 @@ This changelog file was started on October 2019. Previous changes were more or l
 - Erroneous ICE ufrag and passwd parameters sent in reINVITE while ICE was refused previously.
 - Swift and C# wrappers corner-case usage issues.
 - See git log for full list of other minor bugfixes.
-
-
-## [4.5.0] 2021-03-29
 
 ### Added
 - Audio conference API improved: distribution of participant list over RFC4575 SUBSCRIBE/NOTIFY.
@@ -120,8 +113,6 @@ This changelog file was started on October 2019. Previous changes were more or l
 - Windows tests.
 - Name of MediaCodec encoder and decoder filters in H264Helper Java class.
 - Both FileContent and FileTransferContent being present in linphone_chat_message_get_contents() list until upload is finished.
-
-## [4.4.0] 2020-06-16
     
 ### Added
 - Simplified integration with CallKit, see https://wiki.linphone.org/xwiki/wiki/public/view/Lib/Getting%20started/iOS/#HCallKitIntegration
@@ -129,7 +120,6 @@ This changelog file was started on October 2019. Previous changes were more or l
   * compatibility for inclusion within an app extension
   * helper functions to create a LinphoneCore that can be shared between an app and its extension
   * helper functions to process remote push notifications announcing IM messages 
-- RTP bundle mode feature according to https://tools.ietf.org/html/draft-ietf-mmusic-sdp-bundle-negotiation-54, providing
   increased interoperability with WebRTC.
 - TURN over TCP or TLS
 - Ephemeral IM - let user program automatic destruction of IM messages.
