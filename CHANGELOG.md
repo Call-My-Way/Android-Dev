@@ -150,9 +150,6 @@ This changelog file was started on October 2019. Previous changes were more or l
 - Issues when handling SDP offer with only text stream.
 - Random file transfer issues when used with LIME.
 
-
-## [4.3.0] - 2019-10-14
-
 ### Added
 - New cmake options to make "small" builds of liblinphone, by excluding adavanced IM and DB storage.
 
